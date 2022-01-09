@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  background-color: #EDEDED;
+  user-select: none;
+}
+
+@font-face {
+  font-family: 'Kobe';
+  src: url("/fonts/Kobe1.1-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Certeau';
+  src: url("/fonts/CerteauWeb-Regular.woff2") format("woff2");
+}
+
+h1 {
+  font-family: 'Kobe';
+  color: #008F74;
+}
+
+p {
+  font-family: 'Certeau';
+}
+
+main {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 3.4em;
+  grid-template-areas: '. text .' '. text .' 'nav nav nav';
+}
+
+nav {
+  grid-area: nav;
+  background-color: #008F74;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+  width: 7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  width: 1.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav .logoFill {
+  stroke: #EDEDED;
+}
+
+.text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3.5em;
+}
+
+.text h1 {
+  font-size: 4rem;
+  letter-spacing: .02em;
+}
+
+.text p {
+  font-size: .75rem;
+  letter-spacing: .1em;
+  margin-top: -.8em;
+  margin-left: .25em;
+  color: #005243;
+}
+
+@media (min-width: 400px) {
+  nav .projectLogoSVG:hover .projectLogoFull {
+    fill: #EDEDED;
+  }
+  nav .projectLogoSVG:hover .projectLogo {
+    stroke: #EDEDED;
+  }
+  nav .aboutLogoSVG:hover .aboutLogo {
+    stroke: #EDEDED;
+  }
+  .text h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3.4em;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: '. nav' 'text nav' '. nav';
+  }
+  nav {
+    grid-area: nav;
+    background-color: #008F74;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav li {
+    list-style: none;
+    width: 2em;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    text-decoration: none;
+    width: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  .text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0em;
+  }
+  .text h1 {
+    font-size: 6.5rem;
+    letter-spacing: .02em;
+  }
+  .text p {
+    font-size: .8rem;
+    letter-spacing: .1em;
+    margin-top: -1em;
+    margin-left: .3em;
+  }
+}
+/*# sourceMappingURL=home.css.map */

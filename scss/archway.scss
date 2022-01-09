@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    background-color: #EDEDED;
+    user-select: none;
+}
+
+//TYPE
+@font-face {
+    font-family: 'Kobe';
+    src: url('/fonts/Kobe1.1-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Certeau';
+    src: url('/fonts/CerteauWeb-Regular.woff2') format('woff2');
+}
+
+h1, p {
+    font-family: 'Certeau';
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3.4em;
+    grid-template-areas: 
+    'content'
+    'nav'
+    ;
+}
+
+nav {
+    grid-area: nav;
+    width: 100%;
+    background-color: #008F74;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        list-style: none;
+        width: 7em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        width: 1.4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .logoFill {
+        stroke: #EDEDED;
+    }
+
+    .logoFillFull {
+        fill: #EDEDED;
+    }
+}
+
+.content {
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas: 'title' 'description' 'footage' 'tools';
+
+    .title {
+        grid-area: title;
+        color: #008F74;
+        align-self: center;
+        font-size: 2rem;
+    }
+
+    .description {
+        grid-area: description;
+        align-self: start;
+        font-size: .9em;
+        width: 80%;
+        color: #008F74;
+    }
+
+    .tools {
+        grid-area: tools;
+        font-size: .75rem;
+        color: #008F74;
+        align-self: center;
+        justify-self: end;
+        text-align: right;
+    }
+
+    .footage {
+        align-self: center;
+        grid-area: footage;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1em;
+        grid-template-areas: 'full front' 'top side';
+    
+        video {
+            width: 100%;
+        }
+    
+        .front {
+            grid-area: front;
+        }
+    
+        .top {
+            grid-area: top;
+        }
+    
+        .side {
+            grid-area: side;
+        }
+    
+        .full {
+            grid-area: full;
+        }
+    }
+}
+
+//400 MQ
+@media (min-width: 400px) {
+
+    nav {
+
+        .homeLogoSVG:hover {
+
+            .homeLogo {
+                stroke: #EDEDED;
+            }
+        }
+    
+        .aboutLogoSVG:hover {
+    
+            .aboutLogo {
+                stroke: #EDEDED;
+            }
+        }
+    
+}
+
+    .content {
+        width: 90%;
+        height: 95%;
+        align-self: center;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 7fr 1fr;
+        grid-template-areas: 'title' 'description' 'footage' 'tools';
+    
+        .title {
+            grid-area: title;
+            color: #008F74;
+            align-self: start;
+            font-size: 2.2rem;
+        }
+    
+        .description {
+            grid-area: description;
+            align-self: start;
+            font-size: .9em;
+            width: 70%;
+        }
+    
+        .tools {
+            grid-area: tools;
+            font-size: .75rem;
+            color: #008F74;
+            align-self: end;
+            justify-self: end;
+            text-align: right;
+        }
+    
+        .footage {
+            grid-area: footage;
+            align-self: start;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1em;
+            grid-template-areas: 'full front' 'top side';
+        
+            video {
+                width: 100%;
+                align-self: center;
+                justify-self: center;
+            }
+        
+            .front {
+                grid-area: front;
+            }
+        
+            .top {
+                grid-area: top;
+            }
+        
+            .side {
+                grid-area: side;
+            }
+        
+            .full {
+                grid-area: full;
+            }
+        }
+    }
+}
+
+//ARCHWAY MQ
+@media (min-width: 700px) {
+
+    nav {
+        height: 100%;
+        grid-area: nav;
+        background-color: #008F74;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        li {
+            list-style: none;
+            width: 2em;
+            height: 7em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        a {
+            text-decoration: none;
+            width: 1.6em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+        }
+    }
+
+    main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3.4em;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        'content nav'
+        'content nav'
+        'content nav';
+    }
+
+    .content {
+        grid-area: content;
+        width: 95%;
+        height: 95%;
+        align-self: center;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-gap: 1em;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas: 
+        'title . .'
+        'description footage .'
+        '. tools .';
+    
+        .title {
+            grid-area: title;
+            color: #008F74;
+            align-self: start;
+            font-size: 2.2rem;
+        }
+    
+        .description {
+            grid-area: description;
+            align-self: start;
+            font-size: .9em;
+        }
+    
+        .tools {
+            grid-area: tools;
+            font-size: .8rem;
+            color: #008F74;
+            align-self: end;
+            justify-self: end;
+            text-align: right;
+        }
+    
+        .footage {
+            grid-area: footage;
+            align-self: start;
+            justify-self: end;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1em;
+            grid-template-areas: 'full front' 'top side';
+        
+            video {
+                width: 100%;
+                min-width: 200px;
+                max-width: 360px;
+                align-self: center;
+                justify-self: center;
+            }
+        
+            .front {
+                grid-area: front;
+            }
+        
+            .top {
+                grid-area: top;
+            }
+        
+            .side {
+                grid-area: side;
+            }
+        
+            .full {
+                grid-area: full;
+            }
+        }
+    }
+}
+
+
+
+
+

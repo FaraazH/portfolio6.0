@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html, body {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    background-color: #EDEDED;
+    user-select: none;
+}
+
+//TYPE
+@font-face {
+    font-family: 'Kobe';
+    src: url('/fonts/Kobe1.1-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Certeau';
+    src: url('/fonts/CerteauWeb-Regular.woff2') format('woff2');
+}
+
+h1, p {
+    font-family: 'Certeau';
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3.4em;
+    grid-template-areas: 
+    'content'
+    'nav'
+    ;
+}
+
+nav {
+    grid-area: nav;
+    width: 100%;
+    background-color: #008F74;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        list-style: none;
+        width: 7em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        width: 1.4em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .logoFill {
+        stroke: #EDEDED;
+    }
+
+    .logoFillFull {
+        fill: #EDEDED;
+    }
+}
+
+.content {
+    grid-area: content;
+    height: 95%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    'archContainer' 
+    'chromaticContainer' 
+    'insideContainer' 
+    'offbeatContainer';
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'graphic text';
+        text-decoration: none;
+    }
+
+    .graphic {
+        grid-area: graphic;
+        width: 45%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .archGraphic {
+        width: 35%;
+    }
+
+    .offbeatGraphic {
+        width: 30%;
+    }
+
+    .text {
+        grid-area: text;
+        align-self: center;
+        justify-self: center;
+        font-size: .8rem;
+        text-decoration: none;
+        text-align: right;
+        color: #008F74;
+    }
+
+
+}
+
+@media (min-width: 400px) {
+    
+    nav {
+
+        .homeLogoSVG:hover {
+
+            .homeLogo {
+                stroke: #EDEDED;
+            }
+        }
+    
+        .aboutLogoSVG:hover {
+    
+            .aboutLogo {
+                stroke: #EDEDED;
+            }
+        }
+    }
+}
+
+
+//600 MQ
+@media (min-width: 700px) {
+
+    nav {
+        height: 100%;
+        grid-area: nav;
+        background-color: #008F74;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        li {
+            list-style: none;
+            width: 2em;
+            height: 7em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        a {
+            text-decoration: none;
+            width: 1.6em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+        }
+    }
+
+      main {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3.4em;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        '. nav'
+        'content nav'
+        '. nav';
+    }
+
+    .content {
+        height: 100%;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+    
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1.5fr 1fr;
+            grid-template-areas: 'graphic' 'text';
+        }
+    
+        .graphic {
+            grid-area: graphic;
+            width: 50%;
+            max-width: 12em;
+            align-self: end;
+            justify-self: center;
+        }
+    
+        .archGraphic {
+            width: 40%;
+            max-width: 10em;
+        }
+    
+        .offbeatGraphic {
+            width: 32%;
+            max-width: 7em;
+        }
+    
+        .text {
+            grid-area: text;
+            align-self: center;
+            justify-self: center;
+            font-size: .9rem;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            color: #008F74;
+        }
+    }
+}
+
+.hoverFill {
+    fill: #008F74;
+}
+
+.container:hover {
+    cursor: pointer;
+}
+
+.insideHover:hover {
+    fill:#008F74;
+}

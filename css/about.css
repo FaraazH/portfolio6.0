@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  background-color: #EDEDED;
+  user-select: none;
+}
+
+@font-face {
+  font-family: 'Kobe';
+  src: url("/fonts/Kobe1.1-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Certeau';
+  src: url("/fonts/CerteauWeb-Regular.woff2") format("woff2");
+}
+
+h1, p {
+  font-family: 'Certeau';
+}
+
+main {
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3.4em;
+  grid-template-areas: 'content content content' 'nav nav nav';
+}
+
+nav {
+  grid-area: nav;
+  background-color: #008F74;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+nav li {
+  list-style: none;
+  width: 7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  width: 1.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav .logoFill {
+  stroke: #EDEDED;
+}
+
+.content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  position: relative;
+  width: 90%;
+  height: 95%;
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas: 'faraazText faraazText email' '. triangleText .' '. ideasText ideasText';
+}
+
+.email {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: .75rem;
+  color: #008F74;
+}
+
+.faraazText {
+  grid-area: faraazText;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: .9rem;
+  color: #008F74;
+}
+
+.ideasText {
+  grid-area: ideasText;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: .9rem;
+  color: #008F74;
+}
+
+.triangleText {
+  grid-area: triangleText;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: '. illustrationText .' '. . .' 'designText . codeText';
+}
+
+.triangleText h1 {
+  font-size: 1.3rem;
+  color: #008F74;
+}
+
+.triangleText .illustrationText {
+  grid-area: illustrationText;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangleText .designText {
+  grid-area: designText;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.triangleText .codeText {
+  grid-area: codeText;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 400px) {
+  nav .homeLogoSVG:hover .homeLogo {
+    stroke: #EDEDED;
+  }
+  nav .projectLogoSVG:hover .projectLogo {
+    stroke: #EDEDED;
+  }
+  nav .projectLogoSVG:hover .projectLogoFull {
+    fill: #EDEDED;
+  }
+  .text {
+    position: relative;
+    width: 90%;
+    height: 95%;
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1.2fr 1fr;
+    grid-template-areas: 'faraazText faraazText email' '. triangleText .' '. ideasText ideasText';
+  }
+  .triangleText h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  main {
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3.4em;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'content nav';
+  }
+  nav {
+    grid-area: nav;
+    background-color: #008F74;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav li {
+    list-style: none;
+    width: 2em;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    text-decoration: none;
+    width: 1.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+  }
+  .content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    width: 90%;
+    height: 95%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
+    grid-template-areas: 'faraazText faraazText .' '. triangleText .' '. ideasText ideasText';
+  }
+  .faraazText {
+    grid-area: faraazText;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: .9rem;
+  }
+  .ideasText {
+    grid-area: ideasText;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    font-size: .9rem;
+  }
+  .triangleText {
+    grid-area: triangleText;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: '. illustrationText .' '. . .' 'designText . codeText';
+  }
+  .triangleText h1 {
+    font-size: 1.8rem;
+    color: #008F74;
+  }
+  .triangleText .illustrationText {
+    grid-area: illustrationText;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .triangleText .designText {
+    grid-area: designText;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .triangleText .codeText {
+    grid-area: codeText;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .email {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: .8rem;
+    color: #008F74;
+  }
+}
+/*# sourceMappingURL=about.css.map */
