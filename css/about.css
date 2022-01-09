@@ -103,7 +103,7 @@ nav .logoFill {
   grid-area: faraazText;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
   font-size: .9rem;
   color: #008F74;
@@ -114,7 +114,7 @@ nav .logoFill {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: right;
   font-size: .9rem;
   color: #008F74;
@@ -129,7 +129,7 @@ nav .logoFill {
 }
 
 .triangleText h1 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #008F74;
 }
 
@@ -178,7 +178,7 @@ nav .logoFill {
     grid-template-areas: 'faraazText faraazText email' '. triangleText .' '. ideasText ideasText';
   }
   .triangleText h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -237,7 +237,7 @@ nav .logoFill {
     grid-area: faraazText;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     font-size: .9rem;
   }
@@ -246,7 +246,7 @@ nav .logoFill {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
     text-align: right;
     font-size: .9rem;
   }
@@ -258,7 +258,7 @@ nav .logoFill {
     grid-template-areas: '. illustrationText .' '. . .' 'designText . codeText';
   }
   .triangleText h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #008F74;
   }
   .triangleText .illustrationText {
