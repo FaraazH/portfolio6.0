@@ -29,7 +29,7 @@ let width = window.innerWidth;
 
 archContainer.addEventListener('mouseover', () => {
   
-    if(width > 400) {
+    if(width > 500) {
         archHover.classList.add('hoverFill');
     };
 
@@ -48,7 +48,7 @@ let chromaticHover = document.querySelector('.chromaticHover');
 chromaticContainer.addEventListener('mouseover', () => {
 
 
-    if(width > 400) {
+    if(width > 500) {
     chromaticHover.classList.add('hoverFill');
     }
 
@@ -66,7 +66,7 @@ let insideHover = document.querySelectorAll('.insideHover');
 insideContainer.addEventListener('mouseover', () => {
 
 
-    if(width > 400) {
+    if(width > 500) {
     insideHover.forEach(inside => inside.classList.add('hoverFill'));
     }
 
@@ -85,7 +85,7 @@ let offbeatHover = document.querySelector('.offbeatHover');
 offbeatContainer.addEventListener('mouseover', () => {
 
 
-    if(width > 400) {
+    if(width > 500) {
     offbeatHover.classList.add('hoverFill');
     }
 
