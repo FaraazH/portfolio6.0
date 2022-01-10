@@ -157,7 +157,7 @@ nav .logoFill {
   align-items: flex-end;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   nav .homeLogoSVG:hover .homeLogo {
     stroke: #EDEDED;
   }
@@ -178,7 +178,7 @@ nav .logoFill {
     grid-template-areas: 'faraazText faraazText email' '. triangleText .' '. ideasText ideasText';
   }
   .triangleText h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
   }
 }
 
