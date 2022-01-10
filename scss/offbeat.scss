@@ -121,7 +121,7 @@ nav {
 }
 
 //400 MQ
-@media (min-width: 400px) {
+@media (min-width: 500px) {
 
         nav {
             .homeLogoSVG:hover {
@@ -147,7 +147,7 @@ nav {
         justify-self: center;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 5fr 1fr;
+        grid-template-rows: 1fr 1fr 5fr 2fr;
         grid-template-areas: 'title' 'description' 'image' 'tools';
     
         .title {

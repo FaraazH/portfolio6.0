@@ -215,7 +215,7 @@ nav .logoFillFull {
   transition: .8s;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .silent {
     display: none;
   }

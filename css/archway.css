@@ -141,7 +141,7 @@ nav .logoFillFull {
   grid-area: full;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   nav .homeLogoSVG:hover .homeLogo {
     stroke: #EDEDED;
   }

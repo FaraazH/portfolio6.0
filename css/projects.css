@@ -120,7 +120,7 @@ nav .logoFillFull {
   color: #008F74;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   nav .homeLogoSVG:hover .homeLogo {
     stroke: #EDEDED;
   }

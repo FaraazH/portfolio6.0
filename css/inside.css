@@ -83,7 +83,7 @@ nav .logoFillFull {
   justify-self: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 4fr 2fr;
+  grid-template-rows: 1fr 1fr 4fr 2fr;
   grid-template-areas: 'title' 'description' 'video' 'tools';
 }
 
@@ -116,7 +116,7 @@ nav .logoFillFull {
   text-align: right;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   nav .homeLogoSVG:hover .homeLogo {
     stroke: #EDEDED;
   }

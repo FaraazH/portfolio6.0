@@ -98,7 +98,7 @@ nav .logoFill {
   color: #005243;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   nav .projectLogoSVG:hover .projectLogoFull {
     fill: #EDEDED;
   }

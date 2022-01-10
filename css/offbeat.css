@@ -116,7 +116,7 @@ nav .logoFillFull {
   text-align: right;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   nav .homeLogoSVG:hover .homeLogo {
     stroke: #EDEDED;
   }
@@ -130,7 +130,7 @@ nav .logoFillFull {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 2fr;
     grid-template-areas: 'title' 'description' 'image' 'tools';
   }
   .content .title {
