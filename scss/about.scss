@@ -105,7 +105,6 @@ nav {
     left: 0;
     font-size: .75rem;
     color: #008F74;
-
 }
 
 .faraazText {
@@ -132,7 +131,7 @@ nav {
 .triangleText {
     grid-area: triangleText;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: 
     '. illustrationText .'
@@ -140,7 +139,7 @@ nav {
     'designText . codeText';
 
     h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: #008F74;
     }
 

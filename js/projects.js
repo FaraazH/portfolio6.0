@@ -24,9 +24,14 @@ projectLogoFull.forEach(logo => logo.classList.add('logoFillFull'));
 let archContainer = document.querySelector('.archContainer');
 let archHover = document.querySelector('.archHover');
 
-archContainer.addEventListener('mouseover', () => {
+let width = window.innerWidth;
 
-    archHover.classList.add('hoverFill');
+
+archContainer.addEventListener('mouseover', () => {
+  
+    if(width > 400) {
+        archHover.classList.add('hoverFill');
+    };
 
 });
 
@@ -42,7 +47,10 @@ let chromaticHover = document.querySelector('.chromaticHover');
 
 chromaticContainer.addEventListener('mouseover', () => {
 
+
+    if(width > 400) {
     chromaticHover.classList.add('hoverFill');
+    }
 
 });
 
@@ -57,7 +65,10 @@ let insideHover = document.querySelectorAll('.insideHover');
 
 insideContainer.addEventListener('mouseover', () => {
 
+
+    if(width > 400) {
     insideHover.forEach(inside => inside.classList.add('hoverFill'));
+    }
 
 });
 
@@ -73,7 +84,10 @@ let offbeatHover = document.querySelector('.offbeatHover');
 
 offbeatContainer.addEventListener('mouseover', () => {
 
+
+    if(width > 400) {
     offbeatHover.classList.add('hoverFill');
+    }
 
 });
 

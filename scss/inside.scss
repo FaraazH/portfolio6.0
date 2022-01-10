@@ -87,7 +87,7 @@ nav {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 4fr 2fr;
+    grid-template-rows: 1fr 2fr 4fr 2fr;
     grid-template-areas: 'title' 'description' 'video' 'tools';
 
     .title {
