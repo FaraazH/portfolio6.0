@@ -99,6 +99,7 @@ nav {
     .image {
         grid-area: image;
         width: 100%;
+        max-width: 520px;
         align-self: center;
         justify-self: center;
     }
@@ -249,8 +250,8 @@ nav {
     
         .image {
             grid-area: image;
-            min-width: 450px;
-            width: 100%;
+            min-width: 400px;
+            max-width: 100%;
         }
     
         .description {
