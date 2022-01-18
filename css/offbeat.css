@@ -132,7 +132,7 @@ nav .logoFillFull {
     justify-self: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 7fr 1fr;
+    grid-template-rows: 1fr 1fr 8fr 1fr;
     grid-template-areas: 'title' 'description' 'image' 'tools';
   }
   .content .title {
