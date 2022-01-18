@@ -94,6 +94,7 @@ nav {
         grid-area: title;
         color: #008F74;
         align-self: start;
+        font-size: 1.8rem;
     }
 
     video {
@@ -106,13 +107,12 @@ nav {
         grid-area: description;
         align-self: center;
         font-size: .9em;
-        width: 70%;
         color: #008F74;
     }
 
     .tools {
         grid-area: tools;
-        font-size: .75rem;
+        font-size: .7rem;
         color: #008F74;
         align-self: end;
         justify-self: end;
@@ -235,7 +235,7 @@ nav {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-gap: 1em;
-        grid-template-rows: 1fr 6fr 1fr;
+        grid-template-rows: 1fr 8fr 1fr;
         grid-template-areas: 
         'title . .'
         'description video .'
@@ -258,6 +258,7 @@ nav {
             grid-area: description;
             align-self: start;
             font-size: .9rem;
+            width: 70%;
         }
     
         .tools {

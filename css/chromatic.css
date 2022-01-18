@@ -92,6 +92,7 @@ nav .logoFillFull {
   grid-area: title;
   color: #008F74;
   align-self: start;
+  font-size: 1.8rem;
 }
 
 .content .chromatic {
@@ -109,7 +110,7 @@ nav .logoFillFull {
 
 .content .tools {
   grid-area: text;
-  font-size: .75rem;
+  font-size: .7rem;
   color: #008F74;
   align-self: end;
   justify-self: end;
@@ -216,6 +217,23 @@ nav .logoFillFull {
 }
 
 @media (min-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+  .tools {
+    font-size: .75rem;
+  }
+  .content {
+    grid-area: content;
+    width: 90%;
+    height: 95%;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 'title' 'chromatic' 'text';
+  }
   .silent {
     display: none;
   }
@@ -273,7 +291,7 @@ nav .logoFillFull {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 1em;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
     grid-template-areas: 'title . .' 'description chromatic .' '. tools .';
   }
   .content .title {
@@ -284,10 +302,11 @@ nav .logoFillFull {
   }
   .content .chromatic {
     grid-area: chromatic;
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
     align-self: center;
     justify-self: center;
+    padding-bottom: 4em;
   }
   .content .description {
     grid-area: description;

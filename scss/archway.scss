@@ -94,20 +94,19 @@ nav {
         grid-area: title;
         color: #008F74;
         align-self: center;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .description {
         grid-area: description;
         align-self: start;
         font-size: .9em;
-        width: 80%;
         color: #008F74;
     }
 
     .tools {
         grid-area: tools;
-        font-size: .75rem;
+        font-size: .7rem;
         color: #008F74;
         align-self: center;
         justify-self: end;
@@ -173,7 +172,7 @@ nav {
         justify-self: center;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 7fr 1fr;
+        grid-template-rows: 1fr 1fr 8fr 1fr;
         grid-template-areas: 'title' 'description' 'footage' 'tools';
     
         .title {
@@ -287,7 +286,7 @@ nav {
         display: grid;
         grid-template-columns: 1fr 1.5fr 1fr;
         grid-gap: 1em;
-        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 5fr 1fr;
         grid-template-areas: 
         'title . .'
         'description footage .'
