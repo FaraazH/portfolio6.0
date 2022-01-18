@@ -235,7 +235,7 @@ nav {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-gap: 1em;
-        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 6fr 1fr;
         grid-template-areas: 
         'title . .'
         'description video .'
@@ -244,7 +244,7 @@ nav {
         .title {
             grid-area: title;
             color: #008F74;
-            align-self: start;
+            align-self: center;
             font-size: 2.2rem;
         }
     

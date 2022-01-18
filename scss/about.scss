@@ -115,6 +115,7 @@ nav {
     align-items: flex-start;
     font-size: .9rem;
     color: #008F74;
+    padding-bottom: 3em;
 }
 
 .ideasText {
@@ -126,6 +127,7 @@ nav {
     text-align: right;
     font-size: .9rem;
     color: #008F74;
+    padding-top: 3em;
 }
 
 .triangleText {
@@ -203,6 +205,14 @@ nav {
         'faraazText faraazText email'
         '. triangleText .'
         '. ideasText ideasText';
+    }
+
+    .faraazText {
+        padding-bottom: 8em;
+    }
+
+    .ideasText {
+        padding-top: 8em;
     }
 
     .triangleText {
@@ -286,6 +296,7 @@ nav {
     justify-content: center;
     align-items: flex-start;
     font-size: .9rem;
+    padding-bottom: 8em;
 }
 
 .ideasText {
@@ -296,6 +307,7 @@ nav {
     justify-content: center;
     text-align: right;
     font-size: .9rem;
+    padding-top: 8em;
 }
 
 .triangleText {
